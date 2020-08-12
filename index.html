@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <div class="container" id="container">
+            <h1 id="heading_1" class="heading_1">QUIZ APP</h1>
+            <h4 style="color: white; margin: 20px; font-family: sans-serif;">Total Questions 5</h4>
+            <h1 id="heading_2">GET STARTED</h1>
+            <Button style="margin-left: 0;" onclick="start()">START</Button>
+        </div>
+    </center>
+
+    <center>
+        <div class="container hide " id="container2" >
+            <div class="question1"><h2 id="q1">Q1. HTML is what type of language?</h2></div>
+            <div class="options">
+                <div class="op1" onclick="wrong_a()"><h3>a</h3><p id="a1">Scripting Language </p></div>
+                <div class="op1" onclick="right_a2()"><h3>b</h3><p id="a2">Markup Language</p></div>
+                <div class="op1" onclick="wrong_a()"><h3>c</h3><p id="a3">Programming Language</p></div>
+                <div class="op1" onclick="wrong_a()"><h3>d</h3><p id="a4">Network Protocol</p></div>
+            </div>
+            <div class="btn">
+                <button onclick="next1()">Next</button>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="container hide" id="container3">
+            <div class="question1"><h2 id="q2">Q2.From which tag descriptive list starts?</h2></div>
+            <div class="options">
+                <div class="op1" onclick="wrong_b()" ><h3>a</h3><p id="b1">LL tag</p></div>
+                <div class="op1" onclick="wrong_b()"><h3>b</h3><p id="b2">DD tag</p></div>
+                <div class="op1" onclick="right_b3()"><h3>c</h3><p id="b3">DL tag</p></div>
+                <div class="op1" onclick="wrong_b()"><h3>d</h3><p id="b4">DS tag</p></div>
+            </div>
+            <div class="btn">
+                <button onclick="next2()">Next</button>
+            </div>
+        </div>
+        
+        <center>
+            <div class="container hide" id="container4">
+                <div class="question1"><h2>Q3. The year in which HTML was first proposed _______.</h2></div>
+                <div class="options">
+                    <div class="op1" onclick="right_c1()"><h3>a</h3><p id="c1">1990</p></div>
+                    <div class="op1" onclick="wrong_c()"><h3>b</h3><p id="c2">1980</p></div>
+                    <div class="op1" onclick="wrong_c()"><h3>c</h3><p id="c3">2000</p></div>
+                    <div class="op1" onclick="wrong_c()"><h3>d</h3><p id="c4">1995</p></div>
+                </div>
+                <div class="btn">
+                    <button onclick="next3()">Next</button>
+                </div>
+            </div>
+        </center>
+    
+        <center>
+            <div class="container hide" id="container5">
+                <div class="question1"><h2>Q4. Fundamental HTML Block is known as ___________.</h2></div>
+                <div class="options">
+                    <div class="op1" onclick="wrong_d()"><h3>a.</h3><p id="d1">HTML Body</p></div>
+                    <div class="op1" onclick="right_d2()"><h3>b.</h3><p id="d2">HTML Tag</p></div>
+                    <div class="op1" onclick="wrong_d()"><h3>c.</h3><p id="d3">HTML Attribute</p></div>
+                    <div class="op1" onclick="wrong_d()"><h3>d.</h3><p id="d4">HTML Element</p></div>
+                </div>
+                <div class="btn">
+                    <button onclick="next4()">Next</button>
+                </div>
+            </div>
+        </center>
+    
+        <center>
+            <div class="container hide" id="container6">
+                <div class="question1"><h2>Q5. Apart from <b> tag, what other tag makes text bold ?</h2></div>
+                <div class="options">
+                    <div class="op1" onclick="wrong_e()"><h3>a</h3><p id="e1">fat tag</p></div>
+                    <div class="op1" onclick="right_e2()"><h3>b</h3><p id="e2">strong tag</p></div>
+                    <div class="op1" onclick="wrong_e()"><h3>c</h3><p id="e3">block tag</p></div>
+                    <div class="op1" onclick="wrong_()"><h3>d</h3><p id="e4">emp tag</p></div>
+                </div>
+                <div class="btn">
+                    <button onclick="next5()">Result</button>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="container hide" id="container7">
+                <div class="question1"><h2>Result</h2></div>
+                <table>
+                    <tr>
+                        <td>Total Questions</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td id="Q1">Q1</td>
+                        <td id="number1"></td>
+                    </tr>
+                    <tr>
+                        <td id="Q2">Q2</td>
+                        <td id="number2"></td>
+                    </tr>
+                    <tr>
+                        <td id="Q3">Q3</td>
+                        <td id="number3"></td>
+                    </tr>
+                    <tr>
+                        <td id="Q4">Q4</td>
+                        <td id="number4"></td>
+                    </tr>
+                    <tr>
+                        <td id="Q5">Q5</td>
+                        <td id="number5"></td>
+                    </tr>
+                    <tr>
+                        <td id="total">Total Scores</td>
+                        <td id="total_number"></td>
+                    </tr>
+                </table>
+                <button class="try"  onclick="try_again()">Try Again</button>
+                <button class="home"  onclick="home()">Go To Home</button>
+            </div>
+        </center>
+        
+    
+</body>
+<script src="app.js"></script>
+</html>

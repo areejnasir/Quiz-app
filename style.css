@@ -1,0 +1,172 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0%;
+}
+.container{
+    width: 90%;
+    height: 665px;
+    background-color: black;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.hide{
+    display: none;
+}
+.question1{
+    width: 95%;
+    height: 100px;
+    background-color: red;
+}
+h2{
+    padding-top: 30px;
+    color: wheat;
+    font-family: sans-serif;
+}
+.options{
+    width: 95%;
+    height: 400px;
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 20px;
+    /* position: absolute; */
+}
+.op1{
+    width: 30%;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    cursor: pointer;
+}
+.op1:active{
+    background-color: red;
+}
+.op1:hover{
+    box-shadow: 1px 3px 10px red;
+}
+p{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+h3{
+    width: 30px;
+    height: 28px;
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    font-family: sans-serif;
+}
+.btn{
+    width: 95%;
+    height: 40px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 1px 3px 10px red;
+}
+.point{
+    width: 95%;
+    height: 300px;
+    background-color: white;
+}
+table{
+    width: 30%;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+tr{
+    width: 50%;
+}
+td{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+
+}
+.try{
+    margin : 80px 50px;
+    font-size: 14px;
+}
+.home{
+    margin: 80px 50px;
+    font-size: 14px;
+}
+.heading_1{
+    color: white;
+    margin: 200px 50px 20px 50px;
+    font-family: sans-serif;
+}
+#heading_2{
+    color: white;
+    margin: 20px;
+    font-family: sans-serif;
+}
+#container{
+    width: 90%;
+    height: 665px;
+    background-color: black;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width : 1000px) {
+    .op1{
+        width: 100%;
+        margin-top: 10px;
+    }
+    button{
+        margin: 0;
+    }
+    h2{
+        font-size: 20px;
+    }
+    table{
+        margin-top: 40px;
+        width: 80%;
+    }
+    .try{
+        margin: 20px 0px;
+    }
+    .home{
+        margin: 20px 0px;
+    }
+    td{
+        line-height: 30px;
+    }
+    .options{
+        height: 350px;
+        margin-top: 0px;
+    }
+    #heading_1{
+        margin: 100px 50px 20px 50px;
+    }
+    #container{
+        height: 400px;
+    }
+}
